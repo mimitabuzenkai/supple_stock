@@ -1,0 +1,64 @@
+body {
+}
+
+.home_wrapper {
+  // position: relative;
+
+  & .container {
+    width: 800px;
+    height: 800px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid black;
+
+    &__sup {
+      margin: 10% 0 0 0;
+    }
+
+    &__name {
+      @extend .left_width;
+
+      & input {
+        @extend .input_form;
+      }
+    }
+
+    &__sup-name {
+      @extend .left_width;
+
+      & input {
+        @extend .input_form;
+      }
+    }
+
+    &__sup-price {
+      @extend .left_width;
+
+      & input {
+        @extend .input_form;
+      }
+    }
+
+    &__sup-amount {
+      @extend .left_width;
+
+      & input {
+        @extend .input_form;
+      }
+    }
+  }
+}
+
+.left_width {
+  font-size: 40px;
+  margin: 3% 0 0 5%;
+}
+
+.input_form {
+  width: 90%;
+  border: 2px solid black;
+}
