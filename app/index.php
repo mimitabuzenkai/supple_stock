@@ -9,14 +9,13 @@ require_once BASE_PHP_PATH . "partials/header.php";
 if ($_SERVER['REQUEST_URI'] === '/sup/app/login') {
   require_once BASE_PHP_PATH .  "views/login.php";
 }
-require_once BASE_PHP_PATH . "partials/footer.php";
 
 $rpath = str_replace("/sup/app/", '', $_SERVER['REQUEST_URI']);
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 route($rpath, $method);
 
-function route($rpath)
+function route($rpath, $method)
 {
 
   if ($rpath === '') {
@@ -31,7 +30,12 @@ function route($rpath)
   }
 
   require_once $targetFile;
+
+  $fn = "\\controller\\{$rpath}\\{$method}";
+
+  $fn();
 }
 
+require_once BASE_PHP_PATH . "partials/footer.php";
 
 ?>
