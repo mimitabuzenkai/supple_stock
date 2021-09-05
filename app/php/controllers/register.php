@@ -19,7 +19,9 @@ function post()
 
   if (Auth::regist($user)) {
     echo '新規登録に成功しました！';
+    redirect(GO_HOME);
   } else {
     echo '';
+    redirect(GO_REGISTER);
   }
 }

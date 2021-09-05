@@ -17,3 +17,8 @@ function redirect($path)
   header("Location: /sup/app/{$path}");
   die();
 }
+
+function is_alnum($val) {
+
+  return preg_match("/^[a-zA-Z0-9]+$/", $val);
+}

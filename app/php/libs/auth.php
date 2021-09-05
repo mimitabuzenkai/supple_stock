@@ -13,6 +13,11 @@ class Auth
   {
     try {
 
+      if(!(UserModel::ValidateName($name)
+      * UserModel::validatePwd($pwd))) {
+        return false;
+      }
+
       $is_success = false;
 
       $user = UserQuery::fetchById($name);
@@ -46,6 +51,11 @@ class Auth
   {
 
     try {
+
+      if(!($user->isValidName()
+      * $user->isValidPwd())) {
+        return false;
+      }
 
       $is_success = false;
 
