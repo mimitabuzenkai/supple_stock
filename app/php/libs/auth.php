@@ -13,8 +13,8 @@ class Auth
   {
     try {
 
-      if(!(UserModel::ValidateName($name)
-      * UserModel::validatePwd($pwd))) {
+      if (!(UserModel::ValidateName($name)
+        * UserModel::validatePwd($pwd))) {
         return false;
       }
 
@@ -52,8 +52,8 @@ class Auth
 
     try {
 
-      if(!($user->isValidName()
-      * $user->isValidPwd())) {
+      if (!($user->isValidName()
+        * $user->isValidPwd())) {
         return false;
       }
 
@@ -102,11 +102,24 @@ class Auth
       return false;
     }
 
-
     if (isset($user)) {
       return true;
     } else {
       return false;
     }
+  }
+
+  public static function logout()
+  {
+    try {
+
+      UserModel::clearSession();
+    } catch (Throwable $e) {
+
+      Msg::push(Msg::DEBUG, $e->getMessage());
+      return false;
+    }
+
+    return true;
   }
 }
