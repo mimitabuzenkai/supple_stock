@@ -18,6 +18,7 @@ require_once BASE_PHP_PATH . "partials/header.php";
 require_once BASE_PHP_PATH . "partials/footer.php";
 
 $rpath = str_replace("/sup/app/", '', $_SERVER['REQUEST_URI']);
+
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 route($rpath, $method);

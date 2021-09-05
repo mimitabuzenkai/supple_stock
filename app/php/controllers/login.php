@@ -18,7 +18,9 @@ function post()
 
   if (Auth::login($name, $pwd)) {
     echo '認証成功';
+    redirect(GO_HOME);
   } else {
-    echo '';
+    echo '認証失敗';
+    redirect(GO_LOGIN);
   }
 }
