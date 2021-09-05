@@ -20,7 +20,8 @@ class Auth
       if (password_verify($pwd, $user->pwd)) {
 
         $is_success = true;
-        $_SESSION['user'] = $user;
+        UserModel::setSession($user);
+        
       } else {
         echo 'パスワードが間違えています！';
       }
@@ -46,10 +47,23 @@ class Auth
 
     $is_success = UserQuery::insert($user);
 
-    if($is_success) {
-      $_SESSION['user'] = $user;
+    if ($is_success) {
+      UserModel::setSession($user);
     }
 
     return $is_success;
+  }
+
+  // ログインしてるか確認 true　は　ログイン
+  public static function isLogin()
+  {
+
+    $user = UserModel::getSession();
+
+    if (isset($user)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

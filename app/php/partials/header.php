@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,19 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
+<?php
+use lib\Auth;
+
+if (Auth::isLogin()) {
+  echo 'ログイン中です。';
+} else {
+  echo 'ログインしていません。';
+}
+
+?>
   <header class="header">
-    
     <div class="header__wrapper">
       <div class="header__title">
         <h2>サプリメント在庫</h2>
@@ -21,3 +31,4 @@
       </div>
     </div>
   </header>
+
