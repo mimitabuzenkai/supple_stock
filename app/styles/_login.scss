@@ -1,7 +1,5 @@
-body {
-}
 
-.home_wrapper {
+.login_wrapper {
   // position: relative;
 
   & .container {
@@ -14,10 +12,6 @@ body {
     margin: 0 auto;
     padding: 10px;
     border: 3px solid black;
-
-    &__sup {
-      margin: 10% 0 0 0;
-    }
 
     &__name {
       @extend .left_width;
@@ -35,15 +29,7 @@ body {
       }
     }
 
-    &__sup-price {
-      @extend .left_width;
-
-      & input {
-        @extend .input_form;
-      }
-    }
-
-    &__sup-amount {
+    &__sup-pwd {
       @extend .left_width;
 
       & input {

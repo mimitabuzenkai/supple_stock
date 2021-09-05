@@ -1,14 +1,22 @@
-index
-
 <?php
 
 require_once "config.php";
 
 require_once BASE_PHP_PATH . "partials/header.php";
 
-if ($_SERVER['REQUEST_URI'] === '/sup/app/login') {
-  require_once BASE_PHP_PATH .  "views/login.php";
-}
+require_once BASE_PHP_PATH . "libs/helper.php";
+require_once BASE_PHP_PATH . "libs/auth.php";
+
+require_once BASE_PHP_PATH . "models/user.model.php";
+
+require_once BASE_PHP_PATH . "db/datasource.php";
+require_once BASE_PHP_PATH . "db/user.query.php";
+
+session_start();
+
+// if ($_SERVER['REQUEST_URI'] === '/sup/app/login') {
+//   require_once BASE_PHP_PATH .  "views/login.php";
+// }
 
 $rpath = str_replace("/sup/app/", '', $_SERVER['REQUEST_URI']);
 $method = strtolower($_SERVER['REQUEST_METHOD']);

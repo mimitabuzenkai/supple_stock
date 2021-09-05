@@ -469,12 +469,12 @@ template {
   font-size: 40px;
 }
 
-.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount {
+.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount, .register_wrapper .container__sup-name, .register_wrapper .container__sup-pwd, .login_wrapper .container__name, .login_wrapper .container__sup-name, .login_wrapper .container__sup-pwd {
   font-size: 40px;
   margin: 3% 0 0 5%;
 }
 
-.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input {
+.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input, .register_wrapper .container__sup-name input, .register_wrapper .container__sup-pwd input, .login_wrapper .container__name input, .login_wrapper .container__sup-name input, .login_wrapper .container__sup-pwd input {
   width: 90%;
   border: 2px solid black;
 }
@@ -498,12 +498,12 @@ template {
   font-size: 18px;
 }
 
-.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount {
+.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount, .register_wrapper .container__sup-name, .register_wrapper .container__sup-pwd, .login_wrapper .container__name, .login_wrapper .container__sup-name, .login_wrapper .container__sup-pwd {
   font-size: 40px;
   margin: 3% 0 0 5%;
 }
 
-.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input {
+.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input, .register_wrapper .container__sup-name input, .register_wrapper .container__sup-pwd input, .login_wrapper .container__name input, .login_wrapper .container__sup-name input, .login_wrapper .container__sup-pwd input {
   width: 90%;
   border: 2px solid black;
 }
@@ -520,17 +520,17 @@ template {
   margin: 10% 0 0 0;
 }
 
-.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount {
+.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount, .register_wrapper .container__sup-name, .register_wrapper .container__sup-pwd, .login_wrapper .container__name, .login_wrapper .container__sup-name, .login_wrapper .container__sup-pwd {
   font-size: 40px;
   margin: 3% 0 0 5%;
 }
 
-.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input {
+.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input, .register_wrapper .container__sup-name input, .register_wrapper .container__sup-pwd input, .login_wrapper .container__name input, .login_wrapper .container__sup-name input, .login_wrapper .container__sup-pwd input {
   width: 90%;
   border: 2px solid black;
 }
 
-.home_wrapper .container {
+.register_wrapper .container {
   width: 800px;
   height: 800px;
   margin: 0 auto;
@@ -538,21 +538,17 @@ template {
   border: 3px solid black;
 }
 
-.home_wrapper .container__sup {
-  margin: 10% 0 0 0;
-}
-
-.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount {
+.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount, .register_wrapper .container__sup-name, .register_wrapper .container__sup-pwd, .login_wrapper .container__name, .login_wrapper .container__sup-name, .login_wrapper .container__sup-pwd {
   font-size: 40px;
   margin: 3% 0 0 5%;
 }
 
-.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input {
+.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input, .register_wrapper .container__sup-name input, .register_wrapper .container__sup-pwd input, .login_wrapper .container__name input, .login_wrapper .container__sup-name input, .login_wrapper .container__sup-pwd input {
   width: 90%;
   border: 2px solid black;
 }
 
-.home_wrapper .container {
+.login_wrapper .container {
   width: 800px;
   height: 800px;
   margin: 0 auto;
@@ -560,16 +556,12 @@ template {
   border: 3px solid black;
 }
 
-.home_wrapper .container__sup {
-  margin: 10% 0 0 0;
-}
-
-.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount {
+.left_width, .home_wrapper .container__name, .home_wrapper .container__sup-name, .home_wrapper .container__sup-price, .home_wrapper .container__sup-amount, .register_wrapper .container__sup-name, .register_wrapper .container__sup-pwd, .login_wrapper .container__name, .login_wrapper .container__sup-name, .login_wrapper .container__sup-pwd {
   font-size: 40px;
   margin: 3% 0 0 5%;
 }
 
-.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input {
+.input_form, .home_wrapper .container__name input, .home_wrapper .container__sup-name input, .home_wrapper .container__sup-price input, .home_wrapper .container__sup-amount input, .register_wrapper .container__sup-name input, .register_wrapper .container__sup-pwd input, .login_wrapper .container__name input, .login_wrapper .container__sup-name input, .login_wrapper .container__sup-pwd input {
   width: 90%;
   border: 2px solid black;
 }
