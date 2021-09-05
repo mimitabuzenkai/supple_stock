@@ -13,8 +13,3 @@
 </body>
 
 </html>
-
-<?php
-
-
-use lib\Auth;
