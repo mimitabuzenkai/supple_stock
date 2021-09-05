@@ -9,5 +9,6 @@ define('BASE_PHP_PATH', __DIR__ . "/php/");
 
 define('GO_HOME', 'home');
 define('GO_LOGIN', 'login');
+define('GO_REGISTER', 'register');
 
 define('DEBUG', true);

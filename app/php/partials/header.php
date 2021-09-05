@@ -11,6 +11,18 @@
 </head>
 
 <body>
+  <?php
+  use lib\Msg;
+  use lib\Auth;
+  
+  Msg::flush();
+
+  if (Auth::isLogin()) {
+    echo 'ログイン中です。';
+  } else {
+    echo 'ログインしていません。';
+  }
+  ?>
 
   <header class="header">
     <div class="header__wrapper">
