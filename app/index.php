@@ -9,10 +9,13 @@ require_once BASE_PHP_PATH . "libs/auth.php";
 require_once BASE_PHP_PATH . "models/abstract.model.php";
 require_once BASE_PHP_PATH . "models/user.model.php";
 
+require_once BASE_PHP_PATH . "libs/message.php";
+
 require_once BASE_PHP_PATH . "db/datasource.php";
 require_once BASE_PHP_PATH . "db/user.query.php";
 
 session_start();
+
 
 require_once BASE_PHP_PATH . "partials/header.php";
 require_once BASE_PHP_PATH . "partials/footer.php";

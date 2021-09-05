@@ -9,6 +9,18 @@
     </div>
   </div>
 </footer>
+<?php
+use lib\Auth;
+use lib\Msg;
+
+if (Auth::isLogin()) {
+  echo 'ログイン中です。';
+} else {
+  echo 'ログインしていません。';
+}
+Msg::flush();
+
+?>
 
 </body>
 
