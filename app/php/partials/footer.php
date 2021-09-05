@@ -9,6 +9,12 @@
     </div>
   </div>
 </footer>
+
 </body>
 
 </html>
+
+<?php
+
+
+use lib\Auth;
